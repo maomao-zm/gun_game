@@ -15,13 +15,12 @@ export default function App() {
     try {
       const data = await generateMissionBriefing();
       setMission(data);
-      // Wait a moment for user to read, or let them click start
     } catch (e) {
       console.error(e);
       setMission({
-        codename: "ALPHA PROTOCOL",
-        objective: "Survive the onslaught.",
-        intel: "Communications down."
+        codename: "OMEGA PROTOCOL",
+        objective: "Defeat the Cyber-Tank and its drone swarm.",
+        intel: "Look for supply drops to upgrade your weapon systems."
       });
     } finally {
       setIsLoading(false);
